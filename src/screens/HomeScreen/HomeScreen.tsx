@@ -9,7 +9,7 @@ import {RootStackScreenProps} from '~navigation/types';
 export const HomeScreen = ({navigation}: RootStackScreenProps<'Home'>) => {
   return (
     <View style={styles.mainContainer}>
-      <Button label="Task" onPress={() => navigation.navigate('Tasks')} />
+      <Button label="Tasks" onPress={() => navigation.navigate('Tasks')} />
       <Button label="List" onPress={() => navigation.navigate('List')} />
     </View>
   );

@@ -11,7 +11,7 @@ interface Props {
 export const Button: React.FC<Props> = ({label, onPress}) => {
   return (
     <Pressable style={styles.button} onPress={onPress}>
-      <Text>{label}</Text>
+      <Text style={styles.buttonLabel}>{label}</Text>
     </Pressable>
   );
 };
