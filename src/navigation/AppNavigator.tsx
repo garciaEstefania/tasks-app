@@ -1,0 +1,23 @@
+import React from 'react';
+
+import {createStackNavigator} from '@react-navigation/stack';
+
+import {RootStackParamList} from './types';
+
+import {HomeScreen} from '~screens/HomeScreen/HomeScreen';
+import {ListScreen} from '~screens/ListScreen';
+import {TaskScreen} from '~screens/TaskScreen';
+
+const Stack = createStackNavigator<RootStackParamList>();
+
+const AppNavigator = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name={'Home'} component={HomeScreen} />
+      <Stack.Screen name={'Tasks'} component={TaskScreen} />
+      <Stack.Screen name={'List'} component={ListScreen} />
+    </Stack.Navigator>
+  );
+};
+
+export default AppNavigator;

@@ -9,6 +9,7 @@
       "~navigation/*": ["navigation/*"],
       "~redux/*": ["redux/*"],
       "~screens/*": ["screens/*"],
+      "~helpers/*": ["helpers/*"],
     },
     "typeRoots": ["./src/types"],
   }
