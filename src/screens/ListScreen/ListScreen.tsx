@@ -47,16 +47,18 @@ export const ListScreen = () => {
 
   const renderEmptyList = () => {
     return (
-      <View style={styles.emptyListContainer}>
+      <View testID="empty_list" style={styles.emptyListContainer}>
         <Text style={{color: '#000'}}>No items available</Text>
       </View>
     );
   };
 
   return (
-    <View style={{flex: 1}}>
+    <View testID="list_screen" style={{flex: 1}}>
       {isLoading ? (
-        <View style={{flex: 1, justifyContent: 'center'}}>
+        <View
+          testID="loading_indicator"
+          style={{flex: 1, justifyContent: 'center'}}>
           <ActivityIndicator size={'large'} color={'#2177BF'} />
         </View>
       ) : (
