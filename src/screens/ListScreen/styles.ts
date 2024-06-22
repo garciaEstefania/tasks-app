@@ -3,10 +3,16 @@ import {StyleSheet} from 'react-native';
 import {scaleF} from '~helpers/metrics';
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+  },
   emptyListContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  labelEmptyList: {
+    color: '#000',
   },
   listItem: {
     flexDirection: 'row',
@@ -43,6 +49,10 @@ const styles = StyleSheet.create({
     color: '#000',
     fontWeight: '600',
     fontSize: scaleF(20),
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
   },
 });
 
